@@ -53,7 +53,7 @@ export const wrapper = input => WrappedComponent => {
       };
     }
 
-    componentWillReceiveProps(props) {
+    getDerivedStateFromProps(props) {
       // Do not update input if it's not dynamic
       if (typeof input !== 'function') {
         return;
